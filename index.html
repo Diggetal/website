@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diggetal - Online Word Puzzles</title>
+  <meta name="description" content="Diggetal - Fun and challenging online word puzzles. Try our first release, Nounly!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Diggetal - Purveyors of online curiosities" />
+    <meta property="og:description" content="Fun and challenging online word puzzles. Try our first release, Nounly!" />
+    <meta property="og:url" content="diggetal.com" />
+    <meta property="og:image" content="https://diggetal.com/static/diggetal-og.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Fun and challenging online word puzzles. Try our first release, Nounly!" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="diggetal.com">
+    <meta property="twitter:url" content="https://diggetal.com">
+    <meta name="twitter:title" content="Diggetal - Purveyors of online curiosities">
+    <meta name="twitter:description" content="Fun and challenging online word puzzles. Try our first release, Nounly!">
+    <meta name="twitter:image" content="https://diggetal.com/static/diggetal-og.png">
+    <meta name="title" content="Diggetal - Purveyors of online curiosities" />
+    <meta name="description" content="" />
+    <title>Diggetal - Purveyors of online curiosities</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/static/favicon.png"/>
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-blue-200 min-h-screen flex flex-col items-center justify-center overflow-hidden">
+
+  <div id="bubbles" class="absolute inset-0 pointer-events-none"></div>
+
+  <header class="text-center mb-16 relative z-10">
+    <h1 class="text-6xl font-semibold mb-4 text-purple-800 drop-shadow-md font-fredoka">Diggetal</h1>
+    <p class="text-xl text-gray-700">Purveyors of online curiosities.</p>
+  </header>
+
+  <main class="flex flex-col md:flex-row items-stretch justify-center space-y-6 md:space-y-0 md:space-x-6 relative z-10 w-full px-4 md:px-0">
+    <!-- Nounly Section -->
+    <section class="flex flex-col bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 max-w-md w-full">
+      <div class="flex flex-col h-full">
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold text-blue-950 mb-4 text-center">Introducing Nounly!</h2>
+          <p class="text-gray-600 mb-6 text-center">Our first puzzle release that challenges you to think differently about words.</p>
+          <div class="mb-6">
+            <!-- Replace with an actual image of Nounly -->
+            <img src="static/nounly.net.png" alt="Nounly Puzzle" class="mx-auto rounded-md">
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="https://nounly.net" title="Nounly website" class="inline-block bg-blue-950 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Play Nounly Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- Be a Millionaire Section -->
+    <section class="flex flex-col bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 max-w-md w-full">
+      <div class="flex flex-col h-full">
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold text-green-600 mb-4 text-center">Be a Millionaire!</h2>
+          <p class="text-gray-600 mb-6 text-center">Test your knowledge and climb the ranks to become a virtual millionaire!</p>
+          <div class="mb-6">
+            <!-- Replace with an actual image of Be a Millionaire -->
+            <img src="static/beamillionaire.lol.png" alt="Be a Millionaire" class="mx-auto rounded-md">
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="https://beamillionaire.lol" title="Be a Millionaire website" class="inline-block bg-green-600 text-white inline-block font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">Find Out!</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-12 text-sm text-gray-600 relative z-10">
+    &copy; 2023 <a href="https://limeleaf.net">Limeleaf Worker Collective</a>
+  </footer>
+
+  <!-- JavaScript for generating bubbles -->
+  <script>
+    const bubbleContainer = document.getElementById('bubbles');
+
+    function createBubble() {
+      const bubble = document.createElement('div');
+      const size = Math.random() * 60 + 20; // Bubble size between 20 and 80
+      bubble.classList.add('bubble');
+      bubble.style.width = size + 'px';
+      bubble.style.height = size + 'px';
+      bubble.style.left = Math.random() * 100 + '%';
+      bubble.style.animationDuration = Math.random() * 5 + 5 + 's';
+      bubble.style.animationDelay = Math.random() * 5 + 's';
+      bubbleContainer.appendChild(bubble);
+
+      // Remove bubble after animation
+      bubble.addEventListener('animationend', () => {
+        bubble.remove();
+      });
+    }
+
+    // Generate bubbles every second
+    setInterval(createBubble, 1000);
+  </script>
+</body>
+</html>

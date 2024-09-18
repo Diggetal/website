@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    a {
+      @apply text-indigo-600 no-underline transition-colors duration-300 ease-in-out hover:text-indigo-800 hover:underline;
+    }
+  }
+  
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: rise 10s infinite ease-in;
+  }
+
+  @keyframes rise {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-150vh);
+      opacity: 0;
+    }
+  }
