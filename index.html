@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Diggetal - Online Word Puzzles</title>
+  <title>Diggetal - Purveyors of online curiosities</title>
   <meta name="description" content="Diggetal - Fun and challenging online word puzzles. Try our first release, Nounly!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Diggetal - Purveyors of online curiosities" />
@@ -21,52 +21,85 @@
     <meta name="twitter:image" content="https://diggetal.com/static/diggetal-og.png">
     <meta name="title" content="Diggetal - Purveyors of online curiosities" />
     <meta name="description" content="" />
-    <title>Diggetal - Purveyors of online curiosities</title>
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/static/favicon.png"/>
 </head>
 <body class="bg-gradient-to-b from-blue-100 to-blue-200 min-h-screen flex flex-col items-center justify-between">
-
   <div id="bubbles" class="absolute inset-0 pointer-events-none"></div>
-
   <header class="text-center mb-10 relative z-10" style="margin-top: calc(10vh - 15px);">
     <h1 class="text-6xl font-semibold mb-4 text-purple-800 drop-shadow-md font-fredoka">Diggetal</h1>
     <p class="text-xl text-gray-700">Purveyors of online curiosities.</p>
   </header>
 
-  <main class="flex flex-col md:flex-row items-stretch justify-center space-y-4 md:space-y-0 md:space-x-6 relative z-10 w-full px-4 md:px-0">
-    <!-- Nounly Section -->
-    <section class="flex flex-col bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 max-w-md w-full">
-      <div class="flex flex-col h-full">
-        <div class="flex-1">
-          <h2 class="text-3xl font-bold text-blue-950 mb-4 text-center">Nounly</h2>
-          <p class="text-gray-600 mb-6 font-medium text-center">Guess a new noun every day. It's trickier than you think!</p>
-          <div class="mb-6">
-            <!-- Replace with an actual image of Nounly -->
-            <img src="static/nounly.net.png" alt="Nounly Puzzle" class="mx-auto rounded-md">
+  <main class="flex flex-col space-y-4 relative z-10 w-full px-4 md:px-0">
+    <!-- First Row -->
+    <div class="flex flex-col md:flex-row items-stretch justify-center space-y-4 md:space-y-0 md:space-x-6">
+      <!-- Nounly Section -->
+      <section class="flex flex-col bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 w-full md:w-1/3">
+        <div class="flex flex-col h-full">
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold text-blue-950 mb-4 text-center">Nounly</h2>
+            <p class="text-gray-600 mb-6 font-medium text-center">It's harder than you think!</p>
+            <div class="mb-6">
+              <img src="static/nounly-og.png" alt="Nounly Puzzle" class="mx-auto rounded-md">
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="https://nounly.net" title="Nounly website" class="inline-block bg-blue-950 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Play Nounly</a>
           </div>
         </div>
-        <div class="text-center">
-          <a href="https://nounly.net" title="Nounly website" class="inline-block bg-blue-950 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Play Nounly</a>
-        </div>
-      </div>
-    </section>
-    <!-- Be a Millionaire Section -->
-    <section class="flex flex-col bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 max-w-md w-full">
-      <div class="flex flex-col h-full">
-        <div class="flex-1">
-          <h2 class="text-3xl font-bold text-green-600 mb-4 text-center">The Millionaire Calculator</h2>
-          <p class="text-gray-600 mb-6 font-medium text-center">When will you be a millionaire?</p>
-          <div class="mb-6">
-            <!-- Replace with an actual image of Be a Millionaire -->
-            <img src="static/beamillionaire.lol.png" alt="Be a Millionaire" class="mx-auto rounded-md">
+      </section>
+           <!-- libra.codes section -->
+           <section class="flex flex-col bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 w-full md:w-1/3">
+            <div class="flex flex-col h-full">
+              <div class="flex-1">
+                <h2 class="text-3xl font-bold text-red-600 mb-4 text-center">Libera.Codes</h2>
+                <p class="text-gray-600 mb-6 font-medium text-center">Privacy-first QR code creator. No trackers, no ads!</p>
+                <div class="mb-6">
+                  <img src="static/libra-codes.png" alt="Libera.Codes screenshot" class="mx-auto rounded-md">
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="https://libera.codes" title="Libera.Codes website" class="inline-block bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 transition duration-300">Create a Code</a>
+              </div>
+            </div>
+          </section>
+    </div>
+  
+    <!-- Second Row -->
+    <div class="flex flex-col md:flex-row items-stretch justify-center space-y-4 md:space-y-0 md:space-x-6">
+
+       <!-- Be a Millionaire Section -->
+       <section class="flex flex-col bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 w-full md:w-1/3">
+        <div class="flex flex-col h-full">
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold text-green-600 mb-4 text-center">The Millionaire Calculator</h2>
+            <p class="text-gray-600 mb-6 font-medium text-center">When will you be a millionaire?</p>
+            <div class="mb-6">
+              <img src="static/beamillionaire.lol.png" alt="Be a Millionaire" class="mx-auto rounded-md">
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="https://beamillionaire.lol" title="Be a Millionaire website" class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">Find Out!</a>
           </div>
         </div>
-        <div class="text-center">
-          <a href="https://beamillionaire.lol" title="Be a Millionaire website" class="inline-block bg-green-600 text-white inline-block font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">Find Out!</a>
+      </section>
+      <!-- Coming Soon section -->
+      <section class="flex flex-col bg-gray-100 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 w-full md:w-1/3">
+        <div class="flex flex-col h-full">
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold text-yellow-600 mb-4 text-center">Watch this space!</h2>
+            <p class="text-gray-600 mb-6 font-medium text-center">Exciting new things are in the works!</p>
+            <div class="mb-6">
+              <img src="static/coming-soon.png" alt="New Section Image 2" class="mx-auto rounded-md">
+            </div>
+          </div>
+          <div class="text-center">
+            
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="w-full mt-16  bg-white text-gray-600 p-4 rounded-t-3xl shadow-[0_-5px_15px_rgba(0,0,0,0.1)]">
